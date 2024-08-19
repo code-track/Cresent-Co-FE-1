@@ -1,0 +1,214 @@
+:root {
+  --color-empty-shade: #fff;
+  --color-light-shade: #eaeaea;
+  --color-lighter-shade: #edebe6;
+  --color-dark-shade: #6f6f66;
+  --color-darker-shade: #ecf3d3;
+  --color-text: #2d2d26;
+  --color-accent: #f4ff56;
+  --color-constructive: #109d46;
+  --color-destructive: #d94b03;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[class^="CresentText--"] {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+.CresentText {
+  margin: 10px 0;
+}
+
+.CresentText--s {
+  font-size: 0.75rem;
+}
+
+.CresentText--hushed {
+  color: var(--color-dark-shade);
+}
+
+[class^="CresentTextHeading--"] {
+  margin: 0;
+  line-height: 1;
+}
+
+.CresentTextHeading--l {
+  font-size: 2.5rem;
+}
+
+.CresentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.CresentBreak--xs {
+  height: 0.5rem;
+}
+
+.CresentBreak--s {
+  height: 0.75rem;
+}
+
+.CresentBreak--l {
+  height: 1.75rem;
+}
+
+hr.CresentBreak--l {
+  height: 1px;
+  width: 100%;
+  margin: 1.75rem 0;
+  border: none;
+  background-color: var(--color-light-shade);
+}
+
+.CresentInputSelect--root {
+  width: 100%;
+}
+
+.CresentInputSelect--input {
+  padding: 1rem 0.75rem;
+  border: 1px solid var(--color-light-shade);
+  border-bottom: 1px solid var(--color-text);
+  cursor: pointer;
+}
+
+.CresentInputSelect--dropdown-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid var(--color-darker-shade);
+  margin-top: 0.5rem;
+  max-height: 16rem;
+  overflow: auto;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 1px, rgb(0 0 0 / 13%) 0px 4px 8px;
+}
+
+.CresentInputSelect--dropdown-container-opened {
+  display: block;
+}
+
+.CresentInputSelect--dropdown-item {
+  padding: 1rem 0.75rem;
+  background-color: var(--color-empty-shade);
+  border-bottom: 1px solid var(--color-light-shade);
+  cursor: pointer;
+}
+
+.CresentInputSelect--dropdown-item-highlighted {
+  background-color: var(--color-lighter-shade);
+}
+
+.CresentInputSelect--dropdown-item-selected {
+  font-weight: bold;
+}
+
+.CresentInputCheckbox--container {
+  display: flex;
+}
+
+.CresentInputCheckbox--label {
+  border: 1px solid var(--color-light-shade);
+  background-color: var(--color-lighter-shade);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+}
+
+.CresentInputCheckbox--label-disabled {
+  cursor: progress;
+}
+
+.CresentInputCheckbox--label-checked:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  border-color: var(--color-constructive);
+  background-color: var(--color-constructive);
+}
+
+.CresentInputCheckbox--input {
+  display: none;
+}
+
+.CresentButton {
+  border: 1px solid var(--color-light-shade);
+  background-color: var(--color-light-shade);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.CresentButton:hover {
+  background-color: var(--color-lighter-shade);
+}
+
+.CresentButton:disabled {
+  cursor: not-allowed;
+}
+
+.CresentPane {
+  padding: 1rem;
+  border: 1px solid var(--color-light-shade);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.CresentPane--content {
+  flex: 1;
+}
+
+.CresentLoading--container {
+  display: flex;
+  justify-content: center;
+}
+
+.CresentError {
+  margin: 4rem auto;
+  max-width: 40rem;
+  border: 1px solid var(--color-destructive);
+  color: var(--color-destructive);
+  padding: 2rem;
+}
+
+.MainContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.FilterContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
