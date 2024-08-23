@@ -86,7 +86,13 @@ hr.CresentBreak--l {
 }
 
 .CresentInputSelect--root {
-  width: 100%;
+  width:100%;
+  background-color: var(--color-lighter-shade);
+  padding: 10px;
+  position: sticky; 
+ top: 0;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
 }
 
 .CresentInputSelect--input {
@@ -98,8 +104,6 @@ hr.CresentBreak--l {
 
 .CresentInputSelect--dropdown-container {
   display: none;
-  position: fixed;
-  width: 100%;
   max-width: 700px;
   border: 1px solid var(--color-darker-shade);
   margin-top: 0.5rem;
